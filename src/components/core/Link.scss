@@ -1,0 +1,57 @@
+@import '_globals';
+
+.link {
+    color: $color-primary-light;
+    text-decoration: none;
+
+    &--no-underline:hover {
+        text-decoration: none;
+    }
+
+    &--on-primary {
+        color: $color-on-primary;
+
+        &:hover {
+            color: $color-on-primary;
+        }
+    }
+
+    &--on-secondary {
+        color: $color-on-secondary;
+
+        &:hover {
+            color: $color-on-secondary;
+        }
+    }
+
+    &--area-link {
+        &:after {
+            // a11y styling trick to cover the entire report area so any part of it can be clicked.
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    &--button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0;
+        outline: 0;
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+
+        &:focus,
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

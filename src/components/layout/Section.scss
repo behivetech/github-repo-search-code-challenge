@@ -1,0 +1,18 @@
+@import '_globals';
+
+.section {
+    &--centered {
+        margin: 0 auto;
+        max-width: $container-max-width;
+    }
+
+    &--padding {
+        padding: $gutter-small;
+    }
+
+    @media all and (min-width: 35rem) {
+        &--padding {
+            padding: $gutter;
+        }
+    }
+}
