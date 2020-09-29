@@ -1,6 +1,7 @@
-import React, {createContext, useState} from 'react';
+import React, {createContext, useContext, useState} from 'react';
 import PropTypes from 'prop-types';
 import {uniqueId} from 'lodash';
+
 /**
     Notification to set should be in the following format...
     {
@@ -10,16 +11,20 @@ import {uniqueId} from 'lodash';
         ttl: 60000 // (optional) defaults to 60000 use -1 for infinite
     }
 */
-
 import NotificationSnackbar from 'components/app/NotificationSnackbar';
 
 const DEFAULT_TTL = 60000;
 const DEFAULT_CONTEXT = {
-    notification: null,
+    currentNotification: null,
+    removeNotification: () => null,
     setNotification: () => null,
 };
 
-export const NotificationContext = createContext(DEFAULT_CONTEXT);
+const NotificationContext = createContext(DEFAULT_CONTEXT);
+
+export function useNotifications() {
+    return useContext(NotificationContext);
+}
 
 export default function NotificationProvider({children}) {
     const [notifications, setNotificationsState] = useState([]);
@@ -47,6 +52,7 @@ export default function NotificationProvider({children}) {
 
     const context = {
         currentNotification: notifications[0],
+        removeNotification,
         setNotification,
     };
 

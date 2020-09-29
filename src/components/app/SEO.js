@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import {map} from 'lodash';
 
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME;
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL;
+import {SITE_NAME, SITE_URL} from 'config';
 
 export default function SEO({children, description, title}) {
     const siteTitle = title ? `${SITE_NAME} | ${title}` : SITE_NAME;

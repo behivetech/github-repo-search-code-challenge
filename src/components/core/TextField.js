@@ -66,7 +66,7 @@ TextField.propTypes = {
     /** The className that will be on the input if needed. */
     inputClassName: PropTypes.string,
     /** This is a prop that will be passed to the ref prop of the <input /> element*/
-    inputRef: PropTypes.func,
+    inputRef: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
     /**
         Creates a label element for the input. It's recommended to use this prop to show
         the special label made for the TextField component.

@@ -1,0 +1,33 @@
+@import '_globals';
+
+.repo-card-detail {
+    &__card-content {
+        border-bottom: 1px solid $off-white;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    &__card-detail {
+        padding: $gutter-small;
+    }
+    &__card-bottom {
+        align-items: center;
+        display: grid;
+        font-size: 0.75rem;
+        grid-template-columns: 1fr 1fr 2fr;
+        justify-content: space-between;
+        justify-items: center;
+        padding: $gutter;
+    }
+
+    &__with-icon {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 40rem) {
+        &__card-content {
+            font-size: 0.75rem;
+        }
+    }
+}

@@ -6,6 +6,9 @@
     "plugin:react/recommended",
     "prettier"
   ],
+  "globals": {
+    "jest": "readonly"
+  },
   "plugins": [
     "import",
     "module-resolver",

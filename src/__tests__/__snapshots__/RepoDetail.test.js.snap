@@ -1,0 +1,379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RepoDetailPage should render loader 1`] = `
+<body>
+  <div>
+    <div
+      class="repo-detail-page layout"
+    >
+      <header
+        class="layout__header header"
+      >
+        <div
+          class="header__left"
+        >
+          <h1
+            class="headline--h1 headline"
+          >
+            <a
+              class="link--no-underline link--on-primary link"
+              href="/"
+            >
+              <i
+                class="icon fa-icon fa-github fab"
+              />
+               Search
+            </a>
+          </h1>
+        </div>
+        <div
+          class="header__right"
+        >
+           
+          <a
+            class="link--no-underline link--on-primary header__link link"
+            href="/"
+          >
+            &lt;&lt; back to search
+          </a>
+        </div>
+      </header>
+      <main
+        class="layout__main main-container"
+      >
+        <div
+          class="loading"
+        >
+          <div
+            class="loading__spinner"
+          >
+            <i
+              class="rmwc-icon rmwc-icon--ligature material-icons loading-spinner icon"
+            >
+              synch
+            </i>
+          </div>
+        </div>
+      </main>
+      <div
+        aria-atomic="true"
+        aria-hidden="true"
+        aria-live="assertive"
+        class="snackbar mdc-snackbar"
+      >
+        <div
+          class="mdc-snackbar__surface"
+        >
+          <div
+            aria-live="polite"
+            class="mdc-snackbar__label"
+            role="status"
+          >
+            <div
+              class="notification-snackbar"
+            />
+            <div
+              style="display: none;"
+            />
+          </div>
+          <div
+            class="mdc-snackbar__actions"
+          >
+            <button
+              aria-hidden="true"
+              class="rmwc-icon material-icons icon-button icon-button mdc-icon-button"
+              data-mdc-ripple-is-unbounded="true"
+              role="button"
+              tabindex="0"
+            >
+              code
+            </button>
+            <button
+              aria-hidden="true"
+              class="rmwc-icon material-icons icon-button icon-button mdc-icon-button"
+              data-mdc-ripple-is-unbounded="true"
+              role="button"
+              tabindex="0"
+            >
+              close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`RepoDetailPage should render without crashing 1`] = `
+<body>
+  <div>
+    <div
+      class="repo-detail-page layout"
+    >
+      <header
+        class="layout__header header"
+      >
+        <div
+          class="header__left"
+        >
+          <h1
+            class="headline--h1 headline"
+          >
+            <a
+              class="link--no-underline link--on-primary link"
+              href="/"
+            >
+              <i
+                class="icon fa-icon fa-github fab"
+              />
+               Search
+            </a>
+          </h1>
+        </div>
+        <div
+          class="header__right"
+        >
+           
+          <a
+            class="link--no-underline link--on-primary header__link link"
+            href="/"
+          >
+            &lt;&lt; back to search
+          </a>
+        </div>
+      </header>
+      <main
+        class="layout__main main-container"
+      >
+        <section
+          class="section--centered section--padding repo-detail section"
+        >
+          <div>
+            Item not found.
+          </div>
+        </section>
+      </main>
+      <div
+        aria-atomic="true"
+        aria-hidden="true"
+        aria-live="assertive"
+        class="snackbar mdc-snackbar"
+      >
+        <div
+          class="mdc-snackbar__surface"
+        >
+          <div
+            aria-live="polite"
+            class="mdc-snackbar__label"
+            role="status"
+          >
+            <div
+              class="notification-snackbar"
+            />
+            <div
+              style="display: none;"
+            />
+          </div>
+          <div
+            class="mdc-snackbar__actions"
+          >
+            <button
+              aria-hidden="true"
+              class="rmwc-icon material-icons icon-button icon-button mdc-icon-button"
+              data-mdc-ripple-is-unbounded="true"
+              role="button"
+              tabindex="0"
+            >
+              code
+            </button>
+            <button
+              aria-hidden="true"
+              class="rmwc-icon material-icons icon-button icon-button mdc-icon-button"
+              data-mdc-ripple-is-unbounded="true"
+              role="button"
+              tabindex="0"
+            >
+              close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`RepoDetailPage should return a detail 1`] = `
+<body>
+  <div>
+    <div
+      class="repo-detail-page layout"
+    >
+      <header
+        class="layout__header header"
+      >
+        <div
+          class="header__left"
+        >
+          <h1
+            class="headline--h1 headline"
+          >
+            <a
+              class="link--no-underline link--on-primary link"
+              href="/"
+            >
+              <i
+                class="icon fa-icon fa-github fab"
+              />
+               Search
+            </a>
+          </h1>
+        </div>
+        <div
+          class="header__right"
+        >
+           
+          <a
+            class="link--no-underline link--on-primary header__link link"
+            href="/"
+          >
+            &lt;&lt; back to search
+          </a>
+        </div>
+      </header>
+      <main
+        class="layout__main main-container"
+      >
+        <section
+          class="section--centered section--padding repo-detail section"
+        >
+          <div
+            class="repo-detail__header"
+          >
+            <img
+              alt="Repo Avitar"
+              class="repo-detail__avitar avitar"
+              src="mock_avatar_url"
+            />
+            <div>
+              <h2
+                class="headline--h2 headline"
+              >
+                mock_name
+              </h2>
+              mock_login
+            </div>
+          </div>
+          <dl
+            class="repo-detail__dl"
+          >
+            <dt>
+              Stargazers:
+            </dt>
+            <dd>
+              123.5k
+            </dd>
+            <dt>
+              Open Issues:
+            </dt>
+            <dd>
+              5
+            </dd>
+            <dt>
+              Open Issues:
+            </dt>
+            <dd>
+              123
+            </dd>
+            <dt>
+              Language:
+            </dt>
+            <dd>
+              mock_language
+            </dd>
+            <dt>
+              Created:
+            </dt>
+            <dd>
+              01/01/2000 05:00:00 AM
+            </dd>
+            <dt>
+              Updated:
+            </dt>
+            <dd>
+              01/01/2000 05:00:00 AM
+            </dd>
+            <dt>
+              Last Pushed:
+            </dt>
+            <dd>
+              01/01/2000 05:00:00 AM
+            </dd>
+            <dt>
+              License
+            </dt>
+            <dd>
+              <a
+                href="mock_url"
+                rel="noreferrer"
+                target="_blank"
+              >
+                mock_name
+              </a>
+            </dd>
+          </dl>
+          <div>
+            mock_description
+          </div>
+        </section>
+      </main>
+      <div
+        aria-atomic="true"
+        aria-hidden="true"
+        aria-live="assertive"
+        class="snackbar mdc-snackbar"
+      >
+        <div
+          class="mdc-snackbar__surface"
+        >
+          <div
+            aria-live="polite"
+            class="mdc-snackbar__label"
+            role="status"
+          >
+            <div
+              class="notification-snackbar"
+            />
+            <div
+              style="display: none;"
+            />
+          </div>
+          <div
+            class="mdc-snackbar__actions"
+          >
+            <button
+              aria-hidden="true"
+              class="rmwc-icon material-icons icon-button icon-button mdc-icon-button"
+              data-mdc-ripple-is-unbounded="true"
+              role="button"
+              tabindex="0"
+            >
+              code
+            </button>
+            <button
+              aria-hidden="true"
+              class="rmwc-icon material-icons icon-button icon-button mdc-icon-button"
+              data-mdc-ripple-is-unbounded="true"
+              role="button"
+              tabindex="0"
+            >
+              close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

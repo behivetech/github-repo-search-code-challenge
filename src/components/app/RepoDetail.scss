@@ -1,0 +1,38 @@
+@import '_globals';
+
+.repo-detail {
+    max-width: 54rem;
+
+    &__avitar {
+        margin-right: $gutter;
+        width: 8rem;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+    &__dl {
+        align-items: baseline;
+        display: inline-grid;
+        grid-template-columns: 1fr 5fr;
+        margin-top: $gutter;
+
+        dt {
+            padding-right: $gutter;
+            text-align: right;
+            white-space: nowrap;
+        }
+    }
+    &__with-icon {
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    @media screen and (min-width: 40rem) {
+        &__card-content {
+            font-size: 0.75rem;
+        }
+    }
+}

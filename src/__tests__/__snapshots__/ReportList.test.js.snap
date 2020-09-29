@@ -1,0 +1,879 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RepoListPage should render loader 1`] = `
+<body>
+  <div>
+    <div
+      class="home-page layout"
+    >
+      <header
+        class="layout__header header"
+      >
+        <div
+          class="header__left"
+        >
+          <h1
+            class="headline--h1 headline"
+          >
+            <a
+              class="link--no-underline link--on-primary link"
+              href="/"
+            >
+              <i
+                class="icon fa-icon fa-github fab"
+              />
+               Search
+            </a>
+          </h1>
+        </div>
+      </header>
+      <main
+        class="layout__main main-container"
+      >
+        <section
+          class="section--centered section--padding section"
+        >
+          <h2
+            class="headline--h2 headline"
+          >
+            Welcome to the Github Repository Search
+          </h2>
+          <div
+            class="repo-list"
+          >
+            <form
+              class="repo-list__form"
+            >
+              <label
+                aria-labelledby="textfield-Search-label"
+                class="text-field--full-width repo-list__search text-field mdc-text-field mdc-text-field--upgraded"
+              >
+                <span
+                  class="mdc-text-field__ripple"
+                />
+                <input
+                  aria-invalid="false"
+                  class="mdc-text-field__input"
+                  name="q"
+                  placeholder="Please enter a search value"
+                  value=""
+                />
+                <span
+                  class="mdc-floating-label"
+                  id="textfield-Search-label"
+                >
+                  Search
+                </span>
+                <span
+                  class="mdc-line-ripple mdc-line-ripple--deactivating"
+                  style="transform-origin: 0px center;"
+                />
+              </label>
+              <label
+                aria-labelledby="textfield-Language-label"
+                class="text-field--full-width repo-list__language text-field mdc-text-field mdc-text-field--upgraded"
+              >
+                <span
+                  class="mdc-text-field__ripple"
+                />
+                <input
+                  aria-invalid="false"
+                  class="mdc-text-field__input"
+                  name="language"
+                  value=""
+                />
+                <span
+                  class="mdc-floating-label"
+                  id="textfield-Language-label"
+                >
+                  Language
+                </span>
+                <span
+                  class="mdc-line-ripple mdc-line-ripple--deactivating"
+                  style="transform-origin: 0px center;"
+                />
+              </label>
+              <div
+                class="select--full-width select mdc-select"
+                role="listbox"
+              >
+                <div
+                  class="mdc-select__anchor"
+                >
+                  <i
+                    class="mdc-select__dropdown-icon"
+                  />
+                  <div
+                    aria-disabled="false"
+                    aria-haspopup="listbox"
+                    class="mdc-select__selected-text"
+                    role="button"
+                    tabindex="-1"
+                  >
+                    Best Match
+                  </div>
+                  <span
+                    class="mdc-floating-label mdc-floating-label--float-above"
+                    for="select-Sort"
+                  >
+                    Sort
+                  </span>
+                  <span
+                    class="mdc-line-ripple mdc-line-ripple--deactivating"
+                    style="transform-origin: 0px center;"
+                  />
+                  <select
+                    class="rmwc-select__native-control select--full-width select"
+                    name="sort"
+                    tabindex="0"
+                  >
+                    <option
+                      value="best_match"
+                    >
+                      Best Match
+                    </option>
+                    <option
+                      value="stars"
+                    >
+                      Stars
+                    </option>
+                    <option
+                      value="forks"
+                    >
+                      Number of Forks
+                    </option>
+                    <option
+                      value="updated"
+                    >
+                      Updated
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div
+                class="select--full-width select mdc-select"
+                role="listbox"
+              >
+                <div
+                  class="mdc-select__anchor"
+                >
+                  <i
+                    class="mdc-select__dropdown-icon"
+                  />
+                  <div
+                    aria-disabled="false"
+                    aria-haspopup="listbox"
+                    class="mdc-select__selected-text"
+                    role="button"
+                    tabindex="-1"
+                  >
+                    Desc
+                  </div>
+                  <span
+                    class="mdc-floating-label mdc-floating-label--float-above"
+                    for="select-Order"
+                  >
+                    Order
+                  </span>
+                  <span
+                    class="mdc-line-ripple mdc-line-ripple--deactivating"
+                    style="transform-origin: 0px center;"
+                  />
+                  <select
+                    class="rmwc-select__native-control select--full-width select"
+                    name="order"
+                    tabindex="0"
+                  >
+                    <option
+                      value="asc"
+                    >
+                      Asc
+                    </option>
+                    <option
+                      value="desc"
+                    >
+                      Desc
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <div
+              class="loading"
+            >
+              <div
+                class="loading__spinner"
+              >
+                <i
+                  class="rmwc-icon rmwc-icon--ligature material-icons loading-spinner icon"
+                >
+                  synch
+                </i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div
+        aria-atomic="true"
+        aria-hidden="true"
+        aria-live="assertive"
+        class="snackbar mdc-snackbar"
+      >
+        <div
+          class="mdc-snackbar__surface"
+        >
+          <div
+            aria-live="polite"
+            class="mdc-snackbar__label"
+            role="status"
+          >
+            <div
+              class="notification-snackbar"
+            />
+            <div
+              style="display: none;"
+            />
+          </div>
+          <div
+            class="mdc-snackbar__actions"
+          >
+            <button
+              aria-hidden="true"
+              class="rmwc-icon material-icons icon-button icon-button mdc-icon-button"
+              data-mdc-ripple-is-unbounded="true"
+              role="button"
+              tabindex="0"
+            >
+              code
+            </button>
+            <button
+              aria-hidden="true"
+              class="rmwc-icon material-icons icon-button icon-button mdc-icon-button"
+              data-mdc-ripple-is-unbounded="true"
+              role="button"
+              tabindex="0"
+            >
+              close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`RepoListPage should render without crashing 1`] = `
+<body>
+  <div>
+    <div
+      class="home-page layout"
+    >
+      <header
+        class="layout__header header"
+      >
+        <div
+          class="header__left"
+        >
+          <h1
+            class="headline--h1 headline"
+          >
+            <a
+              class="link--no-underline link--on-primary link"
+              href="/"
+            >
+              <i
+                class="icon fa-icon fa-github fab"
+              />
+               Search
+            </a>
+          </h1>
+        </div>
+      </header>
+      <main
+        class="layout__main main-container"
+      >
+        <section
+          class="section--centered section--padding section"
+        >
+          <h2
+            class="headline--h2 headline"
+          >
+            Welcome to the Github Repository Search
+          </h2>
+          <div
+            class="repo-list"
+          >
+            <form
+              class="repo-list__form"
+            >
+              <label
+                aria-labelledby="textfield-Search-label"
+                class="text-field--full-width repo-list__search text-field mdc-text-field mdc-text-field--upgraded"
+              >
+                <span
+                  class="mdc-text-field__ripple"
+                />
+                <input
+                  aria-invalid="false"
+                  class="mdc-text-field__input"
+                  name="q"
+                  placeholder="Please enter a search value"
+                  value=""
+                />
+                <span
+                  class="mdc-floating-label"
+                  id="textfield-Search-label"
+                >
+                  Search
+                </span>
+                <span
+                  class="mdc-line-ripple mdc-line-ripple--deactivating"
+                  style="transform-origin: 0px center;"
+                />
+              </label>
+              <label
+                aria-labelledby="textfield-Language-label"
+                class="text-field--full-width repo-list__language text-field mdc-text-field mdc-text-field--upgraded"
+              >
+                <span
+                  class="mdc-text-field__ripple"
+                />
+                <input
+                  aria-invalid="false"
+                  class="mdc-text-field__input"
+                  name="language"
+                  value=""
+                />
+                <span
+                  class="mdc-floating-label"
+                  id="textfield-Language-label"
+                >
+                  Language
+                </span>
+                <span
+                  class="mdc-line-ripple mdc-line-ripple--deactivating"
+                  style="transform-origin: 0px center;"
+                />
+              </label>
+              <div
+                class="select--full-width select mdc-select"
+                role="listbox"
+              >
+                <div
+                  class="mdc-select__anchor"
+                >
+                  <i
+                    class="mdc-select__dropdown-icon"
+                  />
+                  <div
+                    aria-disabled="false"
+                    aria-haspopup="listbox"
+                    class="mdc-select__selected-text"
+                    role="button"
+                    tabindex="-1"
+                  >
+                    Best Match
+                  </div>
+                  <span
+                    class="mdc-floating-label mdc-floating-label--float-above"
+                    for="select-Sort"
+                  >
+                    Sort
+                  </span>
+                  <span
+                    class="mdc-line-ripple mdc-line-ripple--deactivating"
+                    style="transform-origin: 0px center;"
+                  />
+                  <select
+                    class="rmwc-select__native-control select--full-width select"
+                    name="sort"
+                    tabindex="0"
+                  >
+                    <option
+                      value="best_match"
+                    >
+                      Best Match
+                    </option>
+                    <option
+                      value="stars"
+                    >
+                      Stars
+                    </option>
+                    <option
+                      value="forks"
+                    >
+                      Number of Forks
+                    </option>
+                    <option
+                      value="updated"
+                    >
+                      Updated
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div
+                class="select--full-width select mdc-select"
+                role="listbox"
+              >
+                <div
+                  class="mdc-select__anchor"
+                >
+                  <i
+                    class="mdc-select__dropdown-icon"
+                  />
+                  <div
+                    aria-disabled="false"
+                    aria-haspopup="listbox"
+                    class="mdc-select__selected-text"
+                    role="button"
+                    tabindex="-1"
+                  >
+                    Desc
+                  </div>
+                  <span
+                    class="mdc-floating-label mdc-floating-label--float-above"
+                    for="select-Order"
+                  >
+                    Order
+                  </span>
+                  <span
+                    class="mdc-line-ripple mdc-line-ripple--deactivating"
+                    style="transform-origin: 0px center;"
+                  />
+                  <select
+                    class="rmwc-select__native-control select--full-width select"
+                    name="order"
+                    tabindex="0"
+                  >
+                    <option
+                      value="asc"
+                    >
+                      Asc
+                    </option>
+                    <option
+                      value="desc"
+                    >
+                      Desc
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <div
+        aria-atomic="true"
+        aria-hidden="true"
+        aria-live="assertive"
+        class="snackbar mdc-snackbar"
+      >
+        <div
+          class="mdc-snackbar__surface"
+        >
+          <div
+            aria-live="polite"
+            class="mdc-snackbar__label"
+            role="status"
+          >
+            <div
+              class="notification-snackbar"
+            />
+            <div
+              style="display: none;"
+            />
+          </div>
+          <div
+            class="mdc-snackbar__actions"
+          >
+            <button
+              aria-hidden="true"
+              class="rmwc-icon material-icons icon-button icon-button mdc-icon-button"
+              data-mdc-ripple-is-unbounded="true"
+              role="button"
+              tabindex="0"
+            >
+              code
+            </button>
+            <button
+              aria-hidden="true"
+              class="rmwc-icon material-icons icon-button icon-button mdc-icon-button"
+              data-mdc-ripple-is-unbounded="true"
+              role="button"
+              tabindex="0"
+            >
+              close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`RepoListPage should return a list 1`] = `
+<body>
+  <div>
+    <div
+      class="home-page layout"
+    >
+      <header
+        class="layout__header header"
+      >
+        <div
+          class="header__left"
+        >
+          <h1
+            class="headline--h1 headline"
+          >
+            <a
+              class="link--no-underline link--on-primary link"
+              href="/"
+            >
+              <i
+                class="icon fa-icon fa-github fab"
+              />
+               Search
+            </a>
+          </h1>
+        </div>
+      </header>
+      <main
+        class="layout__main main-container"
+      >
+        <section
+          class="section--centered section--padding section"
+        >
+          <h2
+            class="headline--h2 headline"
+          >
+            Welcome to the Github Repository Search
+          </h2>
+          <div
+            class="repo-list"
+          >
+            <form
+              class="repo-list__form"
+            >
+              <label
+                aria-labelledby="textfield-Search-label"
+                class="text-field--full-width repo-list__search text-field mdc-text-field mdc-text-field--upgraded"
+              >
+                <span
+                  class="mdc-text-field__ripple"
+                />
+                <input
+                  aria-invalid="false"
+                  class="mdc-text-field__input"
+                  name="q"
+                  placeholder="Please enter a search value"
+                  value=""
+                />
+                <span
+                  class="mdc-floating-label"
+                  id="textfield-Search-label"
+                >
+                  Search
+                </span>
+                <span
+                  class="mdc-line-ripple mdc-line-ripple--deactivating"
+                  style="transform-origin: 0px center;"
+                />
+              </label>
+              <label
+                aria-labelledby="textfield-Language-label"
+                class="text-field--full-width repo-list__language text-field mdc-text-field mdc-text-field--upgraded"
+              >
+                <span
+                  class="mdc-text-field__ripple"
+                />
+                <input
+                  aria-invalid="false"
+                  class="mdc-text-field__input"
+                  name="language"
+                  value=""
+                />
+                <span
+                  class="mdc-floating-label"
+                  id="textfield-Language-label"
+                >
+                  Language
+                </span>
+                <span
+                  class="mdc-line-ripple mdc-line-ripple--deactivating"
+                  style="transform-origin: 0px center;"
+                />
+              </label>
+              <div
+                class="select--full-width select mdc-select"
+                role="listbox"
+              >
+                <div
+                  class="mdc-select__anchor"
+                >
+                  <i
+                    class="mdc-select__dropdown-icon"
+                  />
+                  <div
+                    aria-disabled="false"
+                    aria-haspopup="listbox"
+                    class="mdc-select__selected-text"
+                    role="button"
+                    tabindex="-1"
+                  >
+                    Best Match
+                  </div>
+                  <span
+                    class="mdc-floating-label mdc-floating-label--float-above"
+                    for="select-Sort"
+                  >
+                    Sort
+                  </span>
+                  <span
+                    class="mdc-line-ripple mdc-line-ripple--deactivating"
+                    style="transform-origin: 0px center;"
+                  />
+                  <select
+                    class="rmwc-select__native-control select--full-width select"
+                    name="sort"
+                    tabindex="0"
+                  >
+                    <option
+                      value="best_match"
+                    >
+                      Best Match
+                    </option>
+                    <option
+                      value="stars"
+                    >
+                      Stars
+                    </option>
+                    <option
+                      value="forks"
+                    >
+                      Number of Forks
+                    </option>
+                    <option
+                      value="updated"
+                    >
+                      Updated
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div
+                class="select--full-width select mdc-select"
+                role="listbox"
+              >
+                <div
+                  class="mdc-select__anchor"
+                >
+                  <i
+                    class="mdc-select__dropdown-icon"
+                  />
+                  <div
+                    aria-disabled="false"
+                    aria-haspopup="listbox"
+                    class="mdc-select__selected-text"
+                    role="button"
+                    tabindex="-1"
+                  >
+                    Desc
+                  </div>
+                  <span
+                    class="mdc-floating-label mdc-floating-label--float-above"
+                    for="select-Order"
+                  >
+                    Order
+                  </span>
+                  <span
+                    class="mdc-line-ripple mdc-line-ripple--deactivating"
+                    style="transform-origin: 0px center;"
+                  />
+                  <select
+                    class="rmwc-select__native-control select--full-width select"
+                    name="order"
+                    tabindex="0"
+                  >
+                    <option
+                      value="asc"
+                    >
+                      Asc
+                    </option>
+                    <option
+                      value="desc"
+                    >
+                      Desc
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <div
+              class="repo-list__grid"
+            >
+              <div
+                class="repo-card-detail card mdc-card"
+              >
+                <div
+                  class="repo-card-detail__card-content card-primary-actions mdc-card__primary-action"
+                >
+                  <img
+                    alt="Repo Avitar"
+                    class="repo-card-detail__avitar avitar"
+                    src="mock_avatar_url"
+                  />
+                  <div
+                    class="repo-card-detail__card-detail"
+                  >
+                    <a
+                      class="link--area-link link"
+                      href="/repo/1234"
+                    >
+                      <h3
+                        class="headline--h3 headline"
+                      >
+                        mock_login/mock_name
+                      </h3>
+                    </a>
+                    <div>
+                      mock_description
+                    </div>
+                  </div>
+                </div>
+                <section
+                  class="repo-card-detail__card-bottom card-actions mdc-card__actions"
+                >
+                  <div
+                    class="repo-card-detail__with-icon"
+                    title="Stargazers Count"
+                  >
+                    <i
+                      class="rmwc-icon rmwc-icon--ligature material-icons icon"
+                    >
+                      stars
+                    </i>
+                    123.5k
+                  </div>
+                  <div>
+                    mock_language
+                  </div>
+                  <div
+                    class="repo-card-detail__updated"
+                  >
+                    updated: 
+                    01/01/2000
+                  </div>
+                </section>
+              </div>
+              <div
+                class="repo-card-detail card mdc-card"
+              >
+                <div
+                  class="repo-card-detail__card-content card-primary-actions mdc-card__primary-action"
+                >
+                  <img
+                    alt="Repo Avitar"
+                    class="repo-card-detail__avitar avitar"
+                    src="mock_avatar_url2"
+                  />
+                  <div
+                    class="repo-card-detail__card-detail"
+                  >
+                    <a
+                      class="link--area-link link"
+                      href="/repo/1235"
+                    >
+                      <h3
+                        class="headline--h3 headline"
+                      >
+                        mock_login2/mock_name2
+                      </h3>
+                    </a>
+                    <div>
+                      mock_description2
+                    </div>
+                  </div>
+                </div>
+                <section
+                  class="repo-card-detail__card-bottom card-actions mdc-card__actions"
+                >
+                  <div
+                    class="repo-card-detail__with-icon"
+                    title="Stargazers Count"
+                  >
+                    <i
+                      class="rmwc-icon rmwc-icon--ligature material-icons icon"
+                    >
+                      stars
+                    </i>
+                    123.5k
+                  </div>
+                  <div>
+                    mock_language2
+                  </div>
+                  <div
+                    class="repo-card-detail__updated"
+                  >
+                    updated: 
+                    02/02/2000
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div
+        aria-atomic="true"
+        aria-hidden="true"
+        aria-live="assertive"
+        class="snackbar mdc-snackbar"
+      >
+        <div
+          class="mdc-snackbar__surface"
+        >
+          <div
+            aria-live="polite"
+            class="mdc-snackbar__label"
+            role="status"
+          >
+            <div
+              class="notification-snackbar"
+            />
+            <div
+              style="display: none;"
+            />
+          </div>
+          <div
+            class="mdc-snackbar__actions"
+          >
+            <button
+              aria-hidden="true"
+              class="rmwc-icon material-icons icon-button icon-button mdc-icon-button"
+              data-mdc-ripple-is-unbounded="true"
+              role="button"
+              tabindex="0"
+            >
+              code
+            </button>
+            <button
+              aria-hidden="true"
+              class="rmwc-icon material-icons icon-button icon-button mdc-icon-button"
+              data-mdc-ripple-is-unbounded="true"
+              role="button"
+              tabindex="0"
+            >
+              close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

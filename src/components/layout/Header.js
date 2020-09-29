@@ -1,31 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {get} from 'lodash';
+import {useRouter} from 'next/router';
 
 import getClassName from 'tools/getClassName';
 
-import Headline from '../core/Headline';
-import Link from '../core/Link';
-import HeaderNav from './HeaderNav';
-import HeaderNavRight from './HeaderNavRight';
-
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME;
+import Headline from 'components/core/Headline';
+import Icon from 'components/core/Icon';
+import Link from 'components/core/Link';
 
 import './Header.scss';
 
 export default function Header({className}) {
     const [rootClassName, getChildClass] = getClassName({className, rootClass: 'header'});
+    const router = useRouter();
 
     return (
         <header className={rootClassName}>
             <div className={getChildClass('left')}>
-                <HeaderNav className={getChildClass('nav')} />
-                <Headline className={getChildClass('headline')} level={1}>
-                    <Link className={getChildClass('link')} to="/" noUnderline onPrimary>
-                        {SITE_NAME}
+                <Headline level={1}>
+                    <Link href="/" noUnderline onPrimary>
+                        <Icon faBrand faIcon="github" /> Search
                     </Link>
                 </Headline>
             </div>
-            <HeaderNavRight className={getChildClass('right')} />
+            {get(router, 'query.repoId') && (
+                <div className={getChildClass('right')}>
+                    {' '}
+                    <Link
+                        className={getChildClass('link')}
+                        href="/"
+                        noUnderline
+                        onPrimary
+                    >
+                        &lt;&lt; back to search
+                    </Link>
+                </div>
+            )}
         </header>
     );
 }

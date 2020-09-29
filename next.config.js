@@ -1,7 +1,7 @@
 const withStyles = require('@webdeb/next-styles');
 // const path = require('path');
 const path = require('path');
-const glob = require('glob');
+
 // SASS
 module.exports = withStyles({
     sass: true, // use .scss files

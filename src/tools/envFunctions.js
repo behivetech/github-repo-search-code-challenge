@@ -1,1 +1,3 @@
-export const isDev = () => process.env.NEXT_PUBLIC_ENVIRONMENT === 'development';
+import {ENVIRONMENT} from 'config';
+
+export const isDev = () => ENVIRONMENT === 'development';

@@ -4,19 +4,18 @@ import Snackbar from 'components/core/Snackbar';
 
 import getClassName from 'tools/getClassName';
 import {isDev} from 'tools/envFunctions';
+import {useNotifications} from 'components/providers/NotificationProvider';
 
 import IconButton from 'components/core/IconButton';
 
 import './NotificationSnackbar.scss';
 
-export default function NotificationSnackbar({
-    className,
-    notification,
-    removeNotification,
-}) {
-    const {devMessage, message, messageKey, ttl} = useMemo(() => notification || {}, [
-        notification,
-    ]);
+export default function NotificationSnackbar({className}) {
+    const {currentNotification, removeNotification} = useNotifications();
+    const {devMessage, message, messageKey, ttl} = useMemo(
+        () => currentNotification || {},
+        [currentNotification]
+    );
     const [showDevPanel, setShowDevPanel] = useState(false);
     const [rootClassName, getChildClass] = getClassName({
         className,
@@ -58,11 +57,4 @@ export default function NotificationSnackbar({
 
 NotificationSnackbar.propTypes = {
     className: PropTypes.string,
-    notification: PropTypes.shape({
-        message: PropTypes.node.isRequired,
-        messageKey: PropTypes.string.isRequired,
-        ttl: PropTypes.number.isRequired,
-        type: PropTypes.string,
-    }),
-    removeNotification: PropTypes.func.isRequired,
 };

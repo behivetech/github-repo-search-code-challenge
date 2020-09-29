@@ -1,17 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import AppProvider from 'components/providers/app/AppProvider';
+import GithubDataProvider from 'components/providers/GithubDataProvider';
+import NotificationProvider from 'components/providers/NotificationProvider';
 
 import 'styles/index.scss';
 import 'styles/material-icons.scss';
-import 'styles/third-party.scss';
+import 'styles/material-design-components.scss';
+import 'styles/font-awesome/fontawesome.scss';
+import 'styles/font-awesome/brands.scss';
+import 'styles/font-awesome/solid.scss';
 
 export default function App({Component, pageProps}) {
     return (
-        <AppProvider pageProps={pageProps}>
-            <Component {...pageProps} />
-        </AppProvider>
+        <NotificationProvider>
+            <GithubDataProvider>
+                <Component {...pageProps} />
+            </GithubDataProvider>
+        </NotificationProvider>
     );
 }
 

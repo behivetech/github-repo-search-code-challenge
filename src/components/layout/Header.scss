@@ -5,24 +5,19 @@
     color: $color-on-primary;
     position: relative;
 
-    &__headline {
-        display: inline-block;
-        margin-left: $gutter-small;
-    }
-
-    &__left {
-        padding: 0.75rem $gutter;
+    &__left,
+    &__right {
+        padding: $gutter-small $gutter;
     }
 
     &__right {
-        bottom: 0;
-        height: 100%;
         position: absolute;
         right: 0;
+        bottom: 0;
+        text-align: right;
     }
 
-    &__nav {
-        margin-top: -0.2rem;
-        vertical-align: middle;
+    &__github {
+        color: $color-on-primary;
     }
 }

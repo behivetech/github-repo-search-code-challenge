@@ -1,0 +1,13 @@
+@import '~@rmwc/select/select.css';
+
+.select {
+    &--full-width {
+        &.select {
+            width: 100%;
+
+            .mdc-select__anchor {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -16,7 +16,7 @@ export default function Loading({className, loading}) {
     return loading ? (
         <div className={rootClassName}>
             <div className={getChildClass('spinner')}>
-                <LoadingSpinner onDark />
+                <LoadingSpinner />
             </div>
         </div>
     ) : null;

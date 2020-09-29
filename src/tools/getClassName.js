@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import {mapKeys} from 'lodash';
 
-export default function getClassName({className, modifiers, rootClass}) {
+export default function getClassName({addOns, className, modifiers, rootClass}) {
     function getModifiers() {
         return modifiers
             ? mapKeys(modifiers, (modVal, modKey) => `${rootClass}--${modKey}`)
@@ -17,7 +17,8 @@ export default function getClassName({className, modifiers, rootClass}) {
             ...getModifiers(),
         },
         className,
-        rootClass
+        rootClass,
+        addOns
     );
 
     return [rootClassName, getChildClass];
